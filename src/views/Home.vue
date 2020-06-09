@@ -303,7 +303,7 @@ export default {
         this.$store.commit('SET_MINMULTIPLE', apiData.fieldData.min_multiple)
         this.$store.commit(
           'SET_AVAILABLEORDER',
-          apiData.fieldData.available_order
+          apiData.fieldData.max_per_lunch
         )
         if (today.getHours() < 12) {
           this.$store.commit(
@@ -508,11 +508,14 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;900&display=swap');
 
+html,body{font-family: 'Noto Serif TC', serif;}
 .table-important{font-weight: 800;}
 .nav-tabs .nav-link.active{background-color: #089790 !important; border-color: #089790 !important;}
-.btn-info{background-color:#dc8528 !important; border-color: #dc8528 !important;}
+.btn-info{background-color:#dc8528 !important; border-color: #dc8528 !important; }
 .btn-info:hover{background-color:#d15e00 !important; border-color: #d15e00 !important;}
+.btn-lg {border-radius: 0.95rem !important;}
 .nav-tabs .nav-link.active {
   background-color: #17a2b8 !important;
   border-color: #17a2b8 !important;
@@ -530,8 +533,7 @@ export default {
   width: 100%;
 }
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
   display: block;
   font-weight: 300;
   font-size: 100px;
@@ -555,4 +557,11 @@ export default {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
+
+.form-control, .custom-select {
+  border: 1px solid #17a2b8 !important;
+  border-radius: 0.45rem !important;
+  box-shadow: 0 2px 4px 0 #c6e9ef;
+}
+#receiveDate__value_{ border: none !important; box-shadow: none;}
 </style>
