@@ -4,12 +4,15 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "deploy": "gh-pages -d dist -t true"
   },
+  "homepage": "https://do1fendi.github.io/siloah-food-order-tappay",
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap-vue": "^2.15.0",
     "core-js": "^3.6.5",
+    "gh-pages": "^3.1.0",
     "vue": "^2.6.11",
     "vue-axios": "^2.1.5",
     "vue-router": "^3.2.0",

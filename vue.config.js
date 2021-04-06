@@ -1,6 +1,6 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production' ?
-        '/tappaytest/' : '/',
+        '/siloah-food-order-tappay/' : '/',
     chainWebpack: config => {
         config.module
             .rule('vue')

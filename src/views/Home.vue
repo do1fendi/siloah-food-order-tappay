@@ -508,14 +508,15 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
 
-html,body{font-family: 'Noto Serif TC', serif;}
+html,body{font-family: 'Noto Sans TC', sans-serif; 
+}
 .table-important{font-weight: 800;}
 .nav-tabs .nav-link.active{background-color: #089790 !important; border-color: #089790 !important;}
 .btn-info{background-color:#dc8528 !important; border-color: #dc8528 !important; }
 .btn-info:hover{background-color:#d15e00 !important; border-color: #d15e00 !important;}
-.btn-lg {border-radius: 0.95rem !important;}
+.btn-lg {border-radius: 25px !important;}
 .nav-tabs .nav-link.active {
   background-color: #17a2b8 !important;
   border-color: #17a2b8 !important;
@@ -559,9 +560,21 @@ html,body{font-family: 'Noto Serif TC', serif;}
 }
 
 .form-control, .custom-select {
-  border: 1px solid #17a2b8 !important;
+  border: 1px solid #b1d9df !important;
   border-radius: 0.45rem !important;
-  box-shadow: 0 2px 4px 0 #c6e9ef;
+  box-shadow: 0 2px 4px 0 #c6e9ef;  
 }
+
 #receiveDate__value_{ border: none !important; box-shadow: none;}
+@media only screen and (max-width: 600px) {
+  .form-control, .custom-select {
+    border-bottom: 1px solid #b1d9df !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0rem !important;
+    box-shadow: 0 4px 2px -2px #c6e9ef;  
+
+  }
+}
 </style>
